@@ -1,5 +1,6 @@
 body {
   font-family: 'Courier New', Courier, monospace;
+  text-align: center;
 }
 
 img {
@@ -10,6 +11,8 @@ img {
 .title {
   font-size: 36px;
   font-weight: 900;
+  text-align: center;
+  margin-bottom: 32px;
 }
 
 /* do not edit this footer */
@@ -24,3 +27,31 @@ img {
   justify-content: center;
   background: #eee;
 }
+
+.image-content{
+  display: flex;
+  /* justify-content: space-evenly; */
+  justify-content: center;
+  /* margin-top: 32px; */
+  gap: 52px;
+}
+
+.image-items{
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  width: 200px;
+  /* margin: 52px; */
+  /* gap: 52px; */
+}
+
+.text{
+  /* text-align: center; */
+  margin: 0px;
+  border: 1px dotted red;
+}
+/* I am able to align all items even if the parent class is two nodes above the child. 
+   My understanding is that each flexbox created can only act on its immediate child. 
+   Declaring text-align: center in the body class goes counter to my understanind.
+   I need to understand relationship between flex boxes and how they act on each other better.  */
