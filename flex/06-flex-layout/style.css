@@ -5,6 +5,8 @@ body {
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
 }
 
 img {
@@ -24,4 +26,51 @@ input {
   padding: 8px 24px;
   width: 400px;
   margin-bottom: 16px;
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: auto;
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  justify-content: center;
+  /* min-height: 100vh; */
+}
+
+.footer{
+  display: flex;
+  justify-content: space-between;
+  /* align-content: flex-end; */
+  /* align-items: flex-end; */
+  margin-top: auto;
+  background-color: #eeeeee;
+}
+
+.left-links{
+  display: flex;
+  list-style-type: none;
+  gap: 20px;
+  /* justify-content: space-evenly; */
+  padding: 16px;
+}
+
+.right-links{
+  display: flex;
+  list-style-type: none;
+  justify-content: flex-end;
+  padding-left: 0px;
+  padding-right: 40px;
+  padding: 16px;
+  gap: 20px;
+  /* align-items: flex-end; */
+}
+
+a {
+  text-decoration: none;
 }
